@@ -95,6 +95,11 @@ body {
 
 .feedback {
     background-color: $primary;
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-image: url(../img/feedback.jpg);
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -206,6 +211,8 @@ body {
             background-color: $secondary-hover;
         }
     }
+
+    &__right {}
 }
 
 .contacts {

@@ -64,6 +64,27 @@ body {
     }
 }
 
+.contacts {
+    display: flex;
+    justify-content: center;
+    padding-top: 164px;
+    padding-bottom: 153px;
+    h3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 25px 0 18px 0;
+    }
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    &__col {
+        text-align: center;
+        width: 353px;
+    }
+}
 
 .footer {
     width: 100%;

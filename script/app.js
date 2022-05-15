@@ -35,7 +35,7 @@ function sendData(payload) {
     success: function (response) {
       Swal.fire(
         'Письмо отправлено!',
-        'Скоро наш менеджер свяжется с вами',
+        'Скоро я вам перезвоню',
         'success'
       )
     },

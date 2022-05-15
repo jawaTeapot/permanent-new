@@ -24,7 +24,7 @@ body {
         max-width: 670px;
     }
     @include phone {
-        max-width: 375px;
+        max-width: 425px;
     }
 }
 
@@ -99,10 +99,14 @@ body {
 
 .promo {
     height: 940px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-image: url(../img/promo.jpg);
+    background-color: $primary;
+    &__block {
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(../img/promo.jpg);
+    }
     &__heading {
         padding-top: 199px;
         font-family: 'Cormorant Garamond', serif;

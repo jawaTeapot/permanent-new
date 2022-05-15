@@ -35,7 +35,7 @@ function sendData(payload) {
     success: function (response) {
       Swal.fire(
         'Письмо отправлено!',
-        'Скоро наш менеджер свяжется с вами',
+        'Скоро я вам перезвоню',
         'success'
       )
     },
@@ -85,3 +85,17 @@ $('#agree').on('change', function(e) {
     })
   }
 })
+
+
+$(document).ready(function(){
+  // Карусель с фотками
+  $('#slider').slick({
+    dots: true,
+  });
+  // Карусель с фотками - мобайл
+  $('#slider-phone').slick({
+    dots: false,
+    centerPadding: '60px',
+    centerMode: true,
+  });
+});

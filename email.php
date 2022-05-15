@@ -16,16 +16,16 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'ssl://smtp.mail.ru';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'kato.rostov@bk.ru'; // Логин на почте
-    $mail->Password   = '8zjGcgPdDJ0eN20Ppn4G'; // Пароль на почте
+    $mail->Username   = 'pilipenko_katyusha@bk.ru'; // Логин на почте
+    $mail->Password   = 'b3C3m94suPMNypG7Kh4c'; // Пароль на почтеe
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->CharSet = "utf-8";
     $mail->SMTPDebug = false;
 
     //Recipients
-    $mail->setFrom('kato.rostov@bk.ru', 'Сайт'); // Адрес самой почты и имя отправителя 
-    $mail->addAddress('kato.rostov@bk.ru'); // Получатель письма 
+    $mail->setFrom('pilipenko_katyusha@bk.ru', 'Сайт'); // Адрес самой почты и имя отправителя 
+    $mail->addAddress('pilipenko_katyusha@bk.ru'); // Получатель письма 
     
     //Content
     $fio = $_POST['fio'];

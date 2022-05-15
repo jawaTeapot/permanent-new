@@ -1,0 +1,23 @@
+@import "_mixins.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.container {
+    max-width: 1144px;
+    margin: 0 auto;
+    @include tablet {
+        max-width: 878px;
+    }
+    @include tablet-port {
+        max-width: 670px;
+    }
+    @include phone {
+        max-width: 375px;
+    }
+}

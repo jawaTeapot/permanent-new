@@ -92,4 +92,10 @@ $(document).ready(function(){
   $('#slider').slick({
     dots: true,
   });
+  // Карусель с фотками - мобайл
+  $('#slider-phone').slick({
+    dots: false,
+    centerPadding: '60px',
+    centerMode: true,
+  });
 });

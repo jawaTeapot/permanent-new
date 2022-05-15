@@ -1,5 +1,6 @@
 @import "_mixins.scss";
 $primary: #F2E4E1;
+$secondary: #BA551C;
 * {
     margin: 0;
     padding: 0;
@@ -61,6 +62,33 @@ body {
             background-color: black;
             color: white;
         }
+    }
+}
+
+.promo {
+    height: 940px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/promo.jpg);
+    &__heading {
+        padding-top: 199px;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 400;
+        font-size: 112px;
+        line-height: 110px;
+    }
+    &__text {
+        margin-top: 19px;
+        margin-bottom: 40px;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 29px;
+    }
+    &__link {
+        border: 1px solid $secondary;
+        background-color: $secondary;
+        color: #000000;
+        text-decoration: none;
     }
 }
 

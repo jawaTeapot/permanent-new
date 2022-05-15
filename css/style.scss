@@ -28,6 +28,19 @@ body {
     }
 }
 
+#error-checkbox {
+    display: none;
+}
+
+.error {
+    color: #DF0000;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    position: absolute;
+    top: 42px;
+}
+
 .btn {
     background-color: $secondary;
     color: #FFFFFF;
@@ -181,8 +194,13 @@ body {
         @include phone {
             width: 100%;
         }
+
+        &.error-input::placeholder {
+            color: #FF0000;
+        }
     }
     &__form-check {
+        position: relative;
         margin-bottom: 32px;
         #error-checkbox {
             top: 32px;

@@ -31,7 +31,7 @@ body {
     height: 100px;
     color: black;
     background-color: $primary;
-    border: 1px solid #8F959A;
+    border-bottom: 1px solid #8F959A;
     .container {
         height: 100%;
         display: flex;
@@ -70,7 +70,6 @@ body {
     height: 100px;
     color: black;
     background-color: $primary;
-    border: 1px solid #8F959A;
     .container {
         display: flex;
         height: 100%;

@@ -251,6 +251,27 @@ body {
     }
 }
 
+.portfolio {
+    margin-bottom: 204px;
+
+    &__slider {
+
+    }
+
+    .slick-dots {
+        bottom: -50px;
+    }
+
+    .slick-active button {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .slick-dots li button:before {
+        top: 1px;
+    }
+}
+
 .contacts {
     display: flex;
     justify-content: center;

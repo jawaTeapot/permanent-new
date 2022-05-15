@@ -85,3 +85,11 @@ $('#agree').on('change', function(e) {
     })
   }
 })
+
+
+$(document).ready(function(){
+  // Карусель с фотками
+  $('#slider').slick({
+    dots: true,
+  });
+});

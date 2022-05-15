@@ -88,6 +88,7 @@ body {
     height: 940px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: bottom;
     background-image: url(../img/promo.jpg);
     &__heading {
         padding-top: 199px;
@@ -102,6 +103,30 @@ body {
         font-weight: 300;
         font-size: 26px;
         line-height: 29px;
+    }
+}
+
+.advantage {
+    display: flex;
+    justify-content: space-around;
+    &__block {
+        width: 257px;
+    }
+    &__img {
+        margin-top: 92px;
+    }
+    &__heading {
+        margin-top: 22px;
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+    }
+    &__text {
+        margin-bottom: 83px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
     }
 }
 

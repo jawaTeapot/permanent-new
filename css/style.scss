@@ -86,6 +86,9 @@ body {
     }
     &__content {
         padding: 45px;
+        @include phone {
+            padding: 35px;
+        }
     }
     &__link {
         display: block;
@@ -97,7 +100,7 @@ body {
         text-decoration: none;
     }
     .header__btn {
-        display: block !important;
+        display: inline-block !important;
     }
 }
 
@@ -117,6 +120,12 @@ body {
         align-items: center;
         justify-content: space-between;
     }
+    &__burger {
+        display: none;
+        @include tablet-port {
+            display: block;
+        }
+    }
     &__link {
         color: black;
         text-decoration: none;
@@ -129,7 +138,6 @@ body {
         }
     }
     &__btn {
-        width: 268px;
         background-color: transparent;
         outline: none;
         font-weight: 500;
@@ -140,6 +148,10 @@ body {
         border: 2px solid #000000;
         cursor: pointer;
         font-family: 'Jost', sans-serif;
+        display: block;
+        text-decoration: none;
+        color: black;
+        box-sizing: border-box;
         &:hover {
             background-color: black;
             color: white;

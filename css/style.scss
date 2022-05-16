@@ -270,11 +270,22 @@ body {
         height: 768px;
     }
     @include phone {
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: auto;
+        align-items: normal;
+        margin-left: 32px;
     }
     &__heading-top {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 43px;
+        margin-top: 32px;
+        margin-bottom: 24px;
         display: none;
+        @include phone {
+            display: block;
+        }
     }
     &__left {
         position: relative;
@@ -288,8 +299,7 @@ body {
             height: 464px;
         }
         @include tablet-port {
-            width: 238px;
-            height: 380px;
+            display: none;
         }
         @include phone {
             height: 357px;
@@ -310,6 +320,8 @@ body {
         }
         @include phone {
             width: 302px;
+            position: static;
+            margin-bottom: 41px;
         }
     }
     &__right {
@@ -326,6 +338,7 @@ body {
         }
         @include phone {
             top: 0;
+            margin-bottom: 80px;
         }
     }
     &__heading {
@@ -342,9 +355,7 @@ body {
             line-height: 43px;
         }
         @include phone {
-            position: static;
-            left: 0;
-            top: 0;
+            display: none;
         }
     }
     &__text {
@@ -684,13 +695,12 @@ body {
         @include phone {
             display: block;
         }
-
         /* the parent */
         .slick-list {
-            margin-left:-27px;
+            margin-left: -27px;
         }
         .slick-slide {
-            margin-left:27px;
+            margin-left: 27px;
             img {
                 display: block;
                 max-width: 100%;

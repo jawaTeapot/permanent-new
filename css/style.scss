@@ -684,6 +684,8 @@ body {
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
+        color: black;
+        text-decoration: none;
         @include phone {
             width: 240px;
             padding-left: 32px;
@@ -767,6 +769,7 @@ body {
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
+        display: block;
     }
     &__col {
         text-align: center;

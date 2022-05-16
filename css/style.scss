@@ -682,13 +682,16 @@ body {
     }
 
     .mobile-slider-arrow {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         margin-top: 36px;
         &__right {
             margin-left: 47px;
             transform: rotate(180deg);
+        }
+        @include phone {
+            display: flex;
         }
     }
 }

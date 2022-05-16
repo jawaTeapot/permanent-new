@@ -120,6 +120,9 @@ body {
         &:last-child {
             margin-right: 0;
         }
+        @include tablet-port {
+            display: none;
+        }
     }
     &__btn {
         width: 268px;
@@ -379,6 +382,10 @@ body {
             max-width: calc(100% - 98px);
             padding-left: 98px;
         }
+        @include tablet-port {
+            max-width: calc(100% - 58px);
+            padding-left: 58px;
+        }
     }
     &__left {}
     &__right {
@@ -390,6 +397,9 @@ body {
             background-position-x: right;
             background-repeat: no-repeat;
             background-image: url(../img/feedback.jpg);
+        }
+        @include tablet-port {
+            background-position-x: -220px;
         }
     }
     h3 {
@@ -430,6 +440,9 @@ body {
         outline: none;
         @include tablet {
             width: 404px;
+        }
+        @include tablet-port {
+            width: 359px
         }
         @include phone {
             width: 100%;

@@ -105,6 +105,9 @@ body {
     @include tablet {
         height: 794px;
     }
+    @include tablet-port {
+        height: 535px;
+    }
     &__block {
         height: 100%;
         background-size: cover;
@@ -113,6 +116,9 @@ body {
         background-image: url(../img/promo.jpg);
         @include tablet {
             background-position: -130px bottom;
+        }
+        @include tablet-port {
+            background-position: -8px bottom;
         }
     }
     &__heading {
@@ -125,6 +131,10 @@ body {
             font-size: 72px;
             line-height: 115%;
         }
+        @include tablet-port {
+            font-size: 64px;
+            line-height: 111%;
+        }
     }
     &__text {
         margin-top: 19px;
@@ -134,6 +144,10 @@ body {
         line-height: 29px;
         @include tablet {
             font-size: 24px;
+        }
+        @include tablet-port {
+            font-size: 22px;
+            line-height: 120%;
         }
     }
 }

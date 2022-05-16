@@ -167,6 +167,9 @@ body {
         @include tablet-port {
             background-position: -8px bottom;
         }
+        @include phone {
+            background-image: none;
+        }
     }
     &__heading {
         padding-top: 199px;
@@ -202,14 +205,24 @@ body {
 .advantage {
     display: flex;
     justify-content: space-around;
+    @include phone {
+        flex-wrap: wrap;
+    }
     &__block {
         width: 257px;
         @include tablet-port {
             width: 200px;
         }
+        @include phone {
+            width: 238px;
+            height: 224px;
+        }
     }
     &__img {
         margin-top: 92px;
+        @include phone {
+            margin-top: 52px;
+        }
     }
     &__heading {
         margin-top: 22px;
@@ -362,6 +375,9 @@ body {
         position: relative;
         @include tablet {
             margin-left: 51px;
+        }
+        @include phone {
+            display: none;
         }
     }
     &__border {

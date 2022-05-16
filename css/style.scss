@@ -204,6 +204,9 @@ body {
     justify-content: space-around;
     &__block {
         width: 257px;
+        @include tablet-port {
+            width: 200px;
+        }
     }
     &__img {
         margin-top: 92px;
@@ -239,6 +242,9 @@ body {
     @include tablet {
         height: 799px;
     }
+    @include tablet-port {
+        height: 768px;
+    }
     &__left {
         position: relative;
     }
@@ -250,6 +256,10 @@ body {
             width: 310px;
             height: 464px;
         }
+        @include tablet-port {
+            width: 238px;
+            height: 380px;
+        }
     }
     &__img {
         position: absolute;
@@ -258,6 +268,9 @@ body {
         bottom: 16px;
         @include tablet {
             width: 392px;
+        }
+        @include tablet-port {
+            width: 307px;
         }
     }
     &__right {
@@ -268,6 +281,10 @@ body {
             width: 378px;
             top: -60px;
         }
+        @include tablet-port {
+            width: 315px;
+            top: -45px;
+        }
     }
     &__heading {
         margin-bottom: 32px;
@@ -275,12 +292,23 @@ body {
         font-weight: 700;
         font-size: 32px;
         line-height: 43px;
+        @include tablet-port {
+            position: absolute;
+            left: -340px;
+            top: -80px;
+            font-size: 26px;
+            line-height: 43px;
+        }
     }
     &__text {
         margin-bottom: 41px;
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
+        @include tablet-port {
+            line-height: 130%;
+            margin-bottom: 20px;
+        }
     }
     &__link {
         text-decoration: none;

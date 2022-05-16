@@ -394,7 +394,8 @@ body {
         width: 506px;
         position: relative;
         @include phone {
-            width: 311px;
+            width: 100%;
+            padding: 0 32px;
         }
     }
     &__heading {
@@ -481,6 +482,14 @@ body {
         margin-top: 42px;
         display: inline-block;
         @include tablet-port {
+            margin-top: 32px;
+        }
+        @include phone {
+            display: block;
+            width: 268px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            text-align: center;
             margin-top: 32px;
         }
     }

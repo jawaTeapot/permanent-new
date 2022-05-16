@@ -167,12 +167,20 @@ body {
         font-weight: 500;
         font-size: 20px;
         line-height: 130%;
+        @include tablet-port {
+            font-size: 18px;
+            line-height: 130%;
+        }
     }
     &__text {
         margin-bottom: 83px;
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
+        @include tablet-port {
+            font-size: 16px;
+            line-height: 130%;
+        }
     }
 }
 

@@ -19,10 +19,10 @@ body {
     max-width: 1144px;
     margin: 0 auto;
     @include tablet {
-        max-width: 878px;
+        max-width: 1024px;
     }
     @include tablet-port {
-        max-width: 670px;
+        max-width: 768px;
     }
     @include phone {
         max-width: 425px;
@@ -114,6 +114,11 @@ body {
         font-weight: 400;
         font-size: 112px;
         line-height: 110px;
+        @include tablet {
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 115%;
+        }
     }
     &__text {
         margin-top: 19px;
@@ -121,6 +126,9 @@ body {
         font-weight: 300;
         font-size: 26px;
         line-height: 29px;
+        @include tablet {
+            font-size: 24px;
+        }
     }
 }
 
@@ -199,7 +207,6 @@ body {
     height: 889px;
     display: flex;
     align-items: center;
-
     &__block {
         display: flex;
         justify-content: space-between;
@@ -226,7 +233,8 @@ body {
         justify-content: space-between;
         align-items: center;
         padding-bottom: 32px;
-        border-bottom:  1px solid #8F959A;;
+        border-bottom: 1px solid #8F959A;
+        ;
     }
     &__price {
         font-weight: 600;
@@ -385,7 +393,6 @@ body {
     &__icon {
         margin-left: 16px;
     }
-
     &__slider {
         display: block;
         @include phone {

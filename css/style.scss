@@ -19,10 +19,10 @@ body {
     max-width: 1144px;
     margin: 0 auto;
     @include tablet {
-        max-width: 1024px;
+        max-width: 878px;
     }
     @include tablet-port {
-        max-width: 768px;
+        max-width: 670px;
     }
     @include phone {
         max-width: 425px;
@@ -279,13 +279,21 @@ body {
         justify-content: space-between;
         align-items: center;
         height: 761px;
+        @include tablet {
+            max-width: calc(100% - 98px);
+            padding-left: 98px;
+        }
     }
-    &__left {
-
-    }
+    &__left {}
     &__right {
         @include tablet {
-            display: none;
+            margin-left: 55px;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position-x: right;
+            background-repeat: no-repeat;
+            background-image: url(../img/feedback.jpg);
         }
     }
     h3 {
@@ -324,6 +332,9 @@ body {
         line-height: 20px;
         color: #838383;
         outline: none;
+        @include tablet {
+            width: 404px;
+        }
         @include phone {
             width: 100%;
         }
@@ -418,6 +429,9 @@ body {
         }
         .slick-dots li button:before {
             top: 1px;
+        }
+        .slick-arrow {
+            display: none;
         }
     }
     &__slider-phone {

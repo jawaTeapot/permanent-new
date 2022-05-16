@@ -169,7 +169,8 @@ body {
         }
         @include phone {
             background-image: none;
-            margin-left: 32px;
+            padding-left: 32px;
+            box-sizing: border-box;
         }
     }
     &__heading {

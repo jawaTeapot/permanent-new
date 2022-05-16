@@ -631,12 +631,19 @@ body {
 .portfolio {
     padding-top: 154px;
     margin-bottom: 204px;
+    @include phone {
+        padding-top: 72px;
+        margin-bottom: 55px;
+    }
     &__heading {
         font-family: 'Cormorant Garamond', serif;
         font-weight: 700;
         font-size: 32px;
         line-height: 43px;
         margin-bottom: 32px;
+        @include phone {
+            padding-left: 32px;
+        }
     }
     &__text {
         display: flex;
@@ -645,6 +652,10 @@ body {
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
+        @include phone {
+            width: 240px;
+            padding-left: 32px;
+        }
     }
     &__icon {
         margin-left: 16px;
@@ -673,16 +684,18 @@ body {
         @include phone {
             display: block;
         }
+
+        /* the parent */
+        .slick-list {
+            margin-left:-27px;
+        }
         .slick-slide {
-            transition: all 0.3s;
-            margin: 30px;
+            margin-left:27px;
             img {
                 display: block;
                 max-width: 100%;
+                min-width: 305px;
             }
-        }
-        .slick-center {
-            transform: scale(1.5);
         }
     }
     .mobile-slider-arrow {

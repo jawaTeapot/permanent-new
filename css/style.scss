@@ -266,6 +266,10 @@ body {
     }
     @include phone {
         flex-direction: column-reverse;
+        height: auto;
+    }
+    &__heading-top {
+        display: none;
     }
     &__left {
         position: relative;
@@ -282,6 +286,9 @@ body {
             width: 238px;
             height: 380px;
         }
+        @include phone {
+            height: 357px;
+        }
     }
     &__img {
         position: absolute;
@@ -296,6 +303,9 @@ body {
             left: 8px;
             bottom: 8px;
         }
+        @include phone {
+            width: 302px;
+        }
     }
     &__right {
         width: 479px;
@@ -308,6 +318,9 @@ body {
         @include tablet-port {
             width: 315px;
             top: -45px;
+        }
+        @include phone {
+            top: 0;
         }
     }
     &__heading {

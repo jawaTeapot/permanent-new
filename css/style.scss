@@ -613,12 +613,20 @@ body {
 .portfolio {
     padding-top: 154px;
     margin-bottom: 204px;
+    @include phone {
+        padding-top: 72px;
+        margin-bottom: 55px;
+    }
+
     &__heading {
         font-family: 'Cormorant Garamond', serif;
         font-weight: 700;
         font-size: 32px;
         line-height: 43px;
         margin-bottom: 32px;
+        @include phone {
+            padding-left: 32px;
+        }
     }
     &__text {
         display: flex;
@@ -627,6 +635,11 @@ body {
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
+        @include phone {
+            padding-left: 32px;
+            width: 240px;
+            margin-bottom: 50px;
+        }
     }
     &__icon {
         margin-left: 16px;
@@ -665,6 +678,17 @@ body {
         }
         .slick-center {
             transform: scale(1.5);
+        }
+    }
+
+    .mobile-slider-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 36px;
+        &__right {
+            margin-left: 47px;
+            transform: rotate(180deg);
         }
     }
 }

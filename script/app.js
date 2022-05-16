@@ -97,6 +97,8 @@ $(document).ready(function(){
     dots: false,
     centerPadding: '60px',
     centerMode: true,
+    prevArrow: $('#prev'),
+    nextArrow: $('#next'),
   });
 });
 

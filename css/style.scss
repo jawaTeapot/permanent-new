@@ -256,6 +256,9 @@ body {
     }
     &__right {
         position: relative;
+        @include tablet {
+            margin-left: 51px;
+        }
     }
     &__border {
         position: absolute;
@@ -265,12 +268,19 @@ body {
         height: 607px;
         border: 1px solid #CEB1AD;
         z-index: 1;
+        @include tablet {
+            width: 310px;
+            height: 484px;
+        }
     }
     &__img {
         position: relative;
         right: 16px;
         bottom: 16px;
         z-index: 2;
+        @include tablet {
+            max-width: 392px;
+        }
     }
     &__btn {
         margin-top: 42px;
@@ -284,11 +294,30 @@ body {
     background-position-x: right;
     background-repeat: no-repeat;
     background-image: url(../img/feedback.jpg);
+    @include tablet {
+        background-image: none;
+    }
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 761px;
+        @include tablet {
+            max-width: calc(100% - 98px);
+            padding-left: 98px;
+        }
+    }
+    &__left {}
+    &__right {
+        @include tablet {
+            margin-left: 55px;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position-x: right;
+            background-repeat: no-repeat;
+            background-image: url(../img/feedback.jpg);
+        }
     }
     h3 {
         font-family: 'Cormorant Garamond';
@@ -326,6 +355,9 @@ body {
         line-height: 20px;
         color: #838383;
         outline: none;
+        @include tablet {
+            width: 404px;
+        }
         @include phone {
             width: 100%;
         }
@@ -420,6 +452,9 @@ body {
         }
         .slick-dots li button:before {
             top: 1px;
+        }
+        .slick-arrow {
+            display: none;
         }
     }
     &__slider-phone {

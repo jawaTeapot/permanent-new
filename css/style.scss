@@ -169,6 +169,7 @@ body {
         }
         @include phone {
             background-image: none;
+            margin-left: 32px;
         }
     }
     &__heading {
@@ -184,6 +185,9 @@ body {
         @include tablet-port {
             font-size: 64px;
             line-height: 111%;
+        }
+        @include phone {
+            padding-top: 104px;
         }
     }
     &__text {
@@ -215,7 +219,6 @@ body {
         }
         @include phone {
             width: 238px;
-            height: 224px;
         }
     }
     &__img {
@@ -244,6 +247,9 @@ body {
             font-size: 16px;
             line-height: 130%;
         }
+        @include phone {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -260,9 +266,7 @@ body {
     }
     &__left {
         position: relative;
-        @include phone {
-            display: none;
-        }
+        @include phone {}
     }
     &__border {
         width: 405px;
@@ -317,6 +321,11 @@ body {
             font-size: 26px;
             line-height: 43px;
         }
+        @include phone {
+            position: static;
+            left: 0;
+            top: 0;
+        }
     }
     &__text {
         margin-bottom: 41px;
@@ -353,6 +362,9 @@ body {
     &__left {
         width: 506px;
         position: relative;
+        @include phone {
+            width: 311px;
+        }
     }
     &__heading {
         font-family: 'Cormorant Garamond', serif;
@@ -382,7 +394,7 @@ body {
             padding-bottom: 18px;
         }
     }
-    &__text--last{
+    &__text--last {
         margin-bottom: 0;
     }
     &__price {

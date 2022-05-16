@@ -271,6 +271,8 @@ body {
         }
         @include tablet-port {
             width: 307px;
+            left: 8px;
+            bottom: 8px;
         }
     }
     &__right {
@@ -324,6 +326,9 @@ body {
     height: 889px;
     display: flex;
     align-items: center;
+    @include tablet-port {
+        height: 689px;
+    }
     &__block {
         display: flex;
         justify-content: space-between;
@@ -332,7 +337,6 @@ body {
     &__left {
         width: 506px;
         position: relative;
-        //margin-right: 98px;
     }
     &__heading {
         font-family: 'Cormorant Garamond', serif;
@@ -340,6 +344,13 @@ body {
         font-size: 32px;
         line-height: 43px;
         margin-bottom: 54px;
+        @include tablet-port {
+            font-size: 26px;
+            line-height: 43px;
+        }
+        @include tablet-port {
+            margin-bottom: 24px;
+        }
     }
     &__text {
         font-weight: 400;
@@ -351,12 +362,21 @@ body {
         align-items: center;
         padding-bottom: 32px;
         border-bottom: 1px solid #8F959A;
-        ;
+        @include tablet-port {
+            padding-bottom: 18px;
+        }
+    }
+    &__text--last{
+        margin-bottom: 0;
     }
     &__price {
         font-weight: 600;
         font-size: 21px;
         line-height: 130%;
+        @include tablet-port {
+            width: 130px;
+            text-align: right;
+        }
     }
     &__right {
         position: relative;
@@ -376,6 +396,10 @@ body {
             width: 310px;
             height: 484px;
         }
+        @include tablet-port {
+            width: 251px;
+            height: 374px;
+        }
     }
     &__img {
         position: relative;
@@ -385,10 +409,18 @@ body {
         @include tablet {
             max-width: 392px;
         }
+        @include tablet-port {
+            max-width: 308px;
+            right: 8px;
+            bottom: 8px;
+        }
     }
     &__btn {
         margin-top: 42px;
         display: inline-block;
+        @include tablet-port {
+            margin-top: 32px;
+        }
     }
 }
 

@@ -19,10 +19,10 @@ body {
     max-width: 1144px;
     margin: 0 auto;
     @include tablet {
-        max-width: 878px;
+        max-width: 1024px;
     }
     @include tablet-port {
-        max-width: 670px;
+        max-width: 768px;
     }
     @include phone {
         max-width: 425px;
@@ -263,11 +263,22 @@ body {
     background-position-x: right;
     background-repeat: no-repeat;
     background-image: url(../img/feedback.jpg);
+    @include tablet {
+        background-image: none;
+    }
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 761px;
+    }
+    &__left {
+
+    }
+    &__right {
+        @include tablet {
+            display: none;
+        }
     }
     h3 {
         font-family: 'Cormorant Garamond';

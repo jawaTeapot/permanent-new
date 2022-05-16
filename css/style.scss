@@ -247,6 +247,9 @@ body {
     }
     &__left {
         position: relative;
+        @include phone {
+            display: none;
+        }
     }
     &__border {
         width: 405px;
@@ -382,6 +385,9 @@ body {
         position: relative;
         @include tablet {
             margin-left: 51px;
+        }
+        @include phone {
+            display: none;
         }
     }
     &__border {

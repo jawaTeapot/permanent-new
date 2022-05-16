@@ -19,10 +19,10 @@ body {
     max-width: 1144px;
     margin: 0 auto;
     @include tablet {
-        max-width: 1024px;
+        max-width: 878px;
     }
     @include tablet-port {
-        max-width: 768px;
+        max-width: 670px;
     }
     @include phone {
         max-width: 425px;
@@ -81,6 +81,7 @@ body {
         }
     }
     &__btn {
+        width: 268px;
         background-color: transparent;
         outline: none;
         font-weight: 500;
@@ -101,12 +102,18 @@ body {
 .promo {
     height: 940px;
     background-color: $primary;
+    @include tablet {
+        height: 794px;
+    }
     &__block {
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
         background-image: url(../img/promo.jpg);
+        @include tablet {
+            background-position: -130px bottom;
+        }
     }
     &__heading {
         padding-top: 199px;
@@ -115,7 +122,6 @@ body {
         font-size: 112px;
         line-height: 110px;
         @include tablet {
-            font-weight: 400;
             font-size: 72px;
             line-height: 115%;
         }
@@ -168,12 +174,19 @@ body {
         width: 405px;
         height: 607px;
         border: 1px solid #CEB1AD;
+        @include tablet {
+            width: 310px;
+            height: 464px;
+        }
     }
     &__img {
         position: absolute;
         z-index: 1;
         left: 16px;
         bottom: 16px;
+        @include tablet {
+            width: 392px;
+        }
     }
     &__right {
         width: 479px;

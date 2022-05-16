@@ -167,6 +167,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+        height: 799px;
+    }
     &__left {
         position: relative;
     }
@@ -192,6 +195,10 @@ body {
         width: 479px;
         position: relative;
         top: -100px;
+        @include tablet {
+            width: 378px;
+            top: -60px;
+        }
     }
     &__heading {
         margin-bottom: 32px;

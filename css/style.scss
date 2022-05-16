@@ -243,6 +243,9 @@ body {
     }
     &__right {
         position: relative;
+        @include tablet {
+            margin-left: 51px;
+        }
     }
     &__border {
         position: absolute;
@@ -252,12 +255,19 @@ body {
         height: 607px;
         border: 1px solid #CEB1AD;
         z-index: 1;
+        @include tablet {
+            width: 310px;
+            height: 484px;
+        }
     }
     &__img {
         position: relative;
         right: 16px;
         bottom: 16px;
         z-index: 2;
+        @include tablet {
+            max-width: 392px;
+        }
     }
     &__btn {
         margin-top: 42px;

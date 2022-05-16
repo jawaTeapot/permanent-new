@@ -285,7 +285,7 @@ body {
         flex-direction: column;
         height: auto;
         align-items: normal;
-        pading-left: 32px;
+        padding-left: 32px;
         box-sizing: border-box;
     }
     &__heading-top {
@@ -689,6 +689,7 @@ body {
         text-decoration: none;
         @include phone {
             width: 240px;
+            padding-left: 32px;
         }
     }
     &__icon {

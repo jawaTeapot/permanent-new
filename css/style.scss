@@ -264,9 +264,11 @@ body {
     @include tablet-port {
         height: 768px;
     }
+    @include phone {
+        flex-direction: column-reverse;
+    }
     &__left {
         position: relative;
-        @include phone {}
     }
     &__border {
         width: 405px;

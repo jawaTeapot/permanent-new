@@ -342,7 +342,27 @@ body {
 }
 
 .portfolio {
+    padding-top: 154px;
     margin-bottom: 204px;
+    &__heading {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+        margin-bottom: 32px;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    &__icon {
+        margin-left: 16px;
+    }
+
     &__slider {
         display: block;
         @include phone {
